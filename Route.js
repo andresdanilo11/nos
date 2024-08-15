@@ -4,6 +4,7 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'; // Cor
 import Welcome from './Welcome';
 import Home from './Home';
 import Register from './Register';
+import Login from './Login';
 
 const Tab = createBottomTabNavigator(); // Usa el nombre corregido
 
@@ -14,6 +15,7 @@ export default function Route() {
             <Tab.Screen name="Welcome" component={Welcome} />
             <Tab.Screen name="Home" component={Home} />
             <Tab.Screen name="Register" component={Register} />
+            <Tab.Screen name="Login" component={Login} />
         </Tab.Navigator>
       </NavigationContainer>
     );
